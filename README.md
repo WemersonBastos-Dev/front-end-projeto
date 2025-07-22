@@ -41,7 +41,6 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
     <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" alt="VSCode" /></td>
   </tr>
 </table>
----
 
 ## 📂 Estrutura do Projeto
 
