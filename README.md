@@ -61,10 +61,7 @@ LinkedIn: www.linkedin.com/in/wemerson-bastos-129451252
 
 🌐 Meu Portfólio em Construção: https://github.com/WemersonBastos-Dev/WemersonBastos-Dev
 
-
-
-📄 Licença
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+---
 
 ⭐ Contribuição
 Sinta-se livre para abrir Issues, Pull Requests ou fazer forks. Sugestões são sempre bem-vindas!
