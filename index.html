@@ -5,177 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Primeiro Projeto</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,300&display=swap" rel="stylesheet">
-  <style>
-    .banner-head {
-      position: relative;
-      width: 100vw;
-      height: 180px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(90deg, #1a3a7c 60%, #2965f1 100%);
-      box-shadow: 0 4px 24px 0 #1a3a7c44;
-      margin-bottom: 0;
-    }
-    .banner-img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 180px;
-      object-fit: cover;
-      opacity: 0.35;
-      z-index: 1;
-    }
-    .banner-text {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      text-align: center;
-    }
-    .banner-text span {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 12px #1a3a7c99;
-      background: linear-gradient(90deg, #00ffff 0%, #fff200 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-  </style>
-  <style>
-    @keyframes pulse {
-  <div class="banner-head">
-    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Banner Futurista Espaço" class="banner-img">
-    <div class="banner-text">
-      <span>Bem-vindo ao Universo do Front-end!</span>
-    </div>
-  </div>
-      0% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-      100% { transform: scale(1); }
-    }
-    .sidebar a.pulse {
-      animation: pulse 0.4s;
-    }
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100%;
-      background: #1a3a7c;
-      color: #fff;
-      padding-top: 40px;
-      box-shadow: 2px 0 8px rgba(0,0,0,0.08);
-      z-index: 100;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-    .sidebar li {
-      margin-bottom: 18px;
-    }
-    .sidebar a {
-      color: #00ffff;
-      text-decoration: none;
-      font-weight: 700;
-      font-family: 'Montserrat', Arial, sans-serif;
-      transition: color 0.2s;
-    }
-    .sidebar a:hover {
-      color: #fff200;
-    }
-    .sidebar a:visited {
-      color: #ff69b4;
-      background: #222a4c;
-      border-radius: 8px;
-    }
-    .main-content {
-      margin-left: 220px;
-      padding-left: 32px; /* Espaço equivalente a um TAB */
-    }
-    body {
-      background: #2965f1;
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 300;
-      color: #ffffff;
-    }
-    a {
-      color: #00ffff;
-    }
-    h1 {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 700;
-      color: #fff;
-      text-align: center;
-    }
-    p {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 300;
-    }
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .container.margin-top {
-      margin-top: 30px;
-    }
-    .img-card {
-      display: inline-block;
-      background: #fff;
-      border-radius: 16px;
-      padding: 18px;
-      margin-top: 30px;
-    }
-    .img-card img {
-      width: 120px;
-      height: auto;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .img-card img:hover {
-      transform: scale(1.15) rotate(-5deg);
-      box-shadow: 0 0 32px 8px #00ffff99;
-    }
-    .section {
-      margin-top: 50px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .section.margin-top {
-      margin-top: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const links = document.querySelectorAll('.sidebar a');
-      links.forEach(function(link) {
-        link.addEventListener('click', function() {
-          link.classList.add('pulse');
-          setTimeout(function() {
-            link.classList.remove('pulse');
-          }, 400);
-        });
-      });
-    });
-  </script>
-  <video autoplay loop muted playsinline id="bg-video" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+  <script src="js/script.js"></script>
+  <video autoplay loop muted playsinline id="bg-video">
     <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.webm" type="video/webm">
     <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.mp4" type="video/mp4">
     Seu navegador não suporta vídeo em fundo.
   </video>
-  <video autoplay loop muted playsinline id="bg-video" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+  <video autoplay loop muted playsinline id="bg-video">
     <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.webm" type="video/webm">
     <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.mp4" type="video/mp4">
     Seu navegador não suporta vídeo em fundo.
@@ -284,7 +123,7 @@
       </div>
     </section>
   </main>
-  <footer style="text-align:center; margin: 40px 0 20px 0; color: #fff; font-size: 14px;">
+  <footer>
     &copy; 2025 - Meu Primeiro Projeto HTML e CSS
   </footer>
 </body>
