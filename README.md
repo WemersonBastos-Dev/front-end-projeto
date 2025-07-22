@@ -59,6 +59,7 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
 └── preview.png
 
 🧑‍💻 Autor
+
 LinkedIn: www.linkedin.com/in/wemerson-bastos-129451252
 📧 E-mail: bastos.weeme@gmail.com
 🌐 Meu Portfólio em Construção: https://github.com/WemersonBastos-Dev/WemersonBastos-Dev
