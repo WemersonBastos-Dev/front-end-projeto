@@ -35,9 +35,10 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
 
 | Linguagem | Logo |
 |----------|------|
-| HTML5 | ![HTML](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg =30x30) |
-| CSS3 | ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg =30x30) |
-| JavaScript | ![JS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg =30x30) |
+| HTML5    | ![HTML](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) |
+| CSS3     | ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) |
+| JS       | ![JS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) |
+
 
 ---
 
