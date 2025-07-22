@@ -33,11 +33,9 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
 
 ## 🛠️ Tecnologias e Ferramentas
 
-|----------|------|
-| HTML5    | ![HTML](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) |
-| CSS3     | ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) |
-| JS       | ![JS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) |
-
+|            |            |            |
+|:----------:|:----------:|:----------:|
+| ![HTML](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg) | ![CSS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg) | ![JS](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg) |
 
 ---
 
