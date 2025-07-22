@@ -56,8 +56,11 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
 🧑‍💻 Autor
 
 LinkedIn: www.linkedin.com/in/wemerson-bastos-129451252
+
 📧 E-mail: bastos.weeme@gmail.com
+
 🌐 Meu Portfólio em Construção: https://github.com/WemersonBastos-Dev/WemersonBastos-Dev
+
 
 📄 Licença
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
