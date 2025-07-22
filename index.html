@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Primeiro Projeto</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,300&display=swap" rel="stylesheet">
+  <style>
+    .banner-head {
+      position: relative;
+      width: 100vw;
+      height: 180px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #1a3a7c 60%, #2965f1 100%);
+      box-shadow: 0 4px 24px 0 #1a3a7c44;
+      margin-bottom: 0;
+    }
+    .banner-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 180px;
+      object-fit: cover;
+      opacity: 0.35;
+      z-index: 1;
+    }
+    .banner-text {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+    }
+    .banner-text span {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 12px #1a3a7c99;
+      background: linear-gradient(90deg, #00ffff 0%, #fff200 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+  <style>
+    @keyframes pulse {
+  <div class="banner-head">
+    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Banner Futurista Espaço" class="banner-img">
+    <div class="banner-text">
+      <span>Bem-vindo ao Universo do Front-end!</span>
+    </div>
+  </div>
+      0% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+    .sidebar a.pulse {
+      animation: pulse 0.4s;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: #1a3a7c;
+      color: #fff;
+      padding-top: 40px;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+      z-index: 100;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    .sidebar li {
+      margin-bottom: 18px;
+    }
+    .sidebar a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Montserrat', Arial, sans-serif;
+      transition: color 0.2s;
+    }
+    .sidebar a:hover {
+      color: #fff200;
+    }
+    .sidebar a:visited {
+      color: #ff69b4;
+      background: #222a4c;
+      border-radius: 8px;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding-left: 32px; /* Espaço equivalente a um TAB */
+    }
+    body {
+      background: #2965f1;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 300;
+      color: #ffffff;
+    }
+    a {
+      color: #00ffff;
+    }
+    h1 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+    }
+    p {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 300;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .container.margin-top {
+      margin-top: 30px;
+    }
+    .img-card {
+      display: inline-block;
+      background: #fff;
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 30px;
+    }
+    .img-card img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .img-card img:hover {
+      transform: scale(1.15) rotate(-5deg);
+      box-shadow: 0 0 32px 8px #00ffff99;
+    }
+    .section {
+      margin-top: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section.margin-top {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.sidebar a');
+      links.forEach(function(link) {
+        link.addEventListener('click', function() {
+          link.classList.add('pulse');
+          setTimeout(function() {
+            link.classList.remove('pulse');
+          }, 400);
+        });
+      });
+    });
+  </script>
+  <video autoplay loop muted playsinline id="bg-video" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.webm" type="video/webm">
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em fundo.
+  </video>
+  <video autoplay loop muted playsinline id="bg-video" style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.webm" type="video/webm">
+    <source src="https://www.videvo.net/videvo_files/converted/2015_08/preview/Space_Galaxy_Loop.mp495892.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em fundo.
+  </video>
+  <header>
+    <h1>Explorando o Universo do Front-end: Seu Guia para Criar Interfaces Modernas!</h1>
+  </header>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">HTML</a></li>
+      <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS</a></li>
+      <li><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener">JavaScript</a></li>
+      <li><a href="https://www.w3schools.com/sass/" target="_blank" rel="noopener">Sass</a></li>
+      <li><a href="https://www.w3schools.com/git/" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.w3schools.com/bootstrap/" target="_blank" rel="noopener">Bootstrap</a></li>
+      <li><a href="https://www.w3schools.com/nodejs/default.asp" target="_blank" rel="noopener">Node.js</a></li>
+      <li><a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noopener">Tailwind</a></li>
+      <li><a href="https://nextjs.org/docs" target="_blank" rel="noopener">Next.js</a></li>
+      <li><a href="https://www.w3schools.com/typescript/" target="_blank" rel="noopener">TypeScript</a></li>
+      <li><a href="https://www.w3schools.com/react/" target="_blank" rel="noopener">React</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="container">
+      <p>
+        Imagine abrir uma porta para um universo totalmente novo, onde você é o criador de mundos digitais! Ao dar seu primeiro passo com HTML e CSS, você começa a construir páginas que podem inspirar, ensinar e conectar pessoas ao redor do planeta. Prepare-se para desbravar esse território fascinante, onde cada linha de código é uma descoberta e cada projeto é uma aventura rumo ao futuro da web!
+      </p>
+    </section>
+    <section class="container">
+      <h2>CSS: O Coração do Front-end Moderno</h2>
+      <p>O CSS é essencial para transformar ideias em interfaces digitais atraentes e funcionais. Ele permite criar layouts responsivos, personalizar cores, fontes e espaçamentos, além de dar vida aos elementos com animações e transições. No universo do Front-end, o CSS é o que conecta criatividade e tecnologia, tornando possível construir experiências visuais únicas e interativas para os usuários em qualquer dispositivo.</p>
+    </section>
+    <section class="container">
+      <p>Além disso, o CSS permite separar o conteúdo da apresentação, facilitando a manutenção e o desenvolvimento do site.
+        Com o uso de seletores e propriedades, é possível aplicar estilos de forma eficiente e reutilizável.
+        O CSS também possibilita a criação de animações e transições,
+        tornando a interface mais dinâmica e atraente para os usuários.
+      </p>
+    </section>
+    <section class="container margin-top">
+      <div class="img-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="Logo do CSS">
+      </div>
+      <div class="section">
+        O CSS (Cascading Style Sheets) surgiu em 1996, criado por Håkon Wium Lie, com o objetivo de separar o conteúdo da apresentação visual das páginas web. Antes do CSS, o HTML era responsável tanto pela estrutura quanto pelo estilo dos sites, o que dificultava a manutenção e a padronização. Com o CSS, tornou-se possível definir estilos de forma independente, promovendo maior flexibilidade e organização no desenvolvimento web.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo do HTML">
+      </div>
+      <div class="section margin-top">
+        O HTML (HyperText Markup Language) foi criado por Tim Berners-Lee em 1991, sendo a linguagem base para a construção de páginas web. Ele surgiu para estruturar e organizar conteúdos na internet, permitindo a criação de documentos interligados por hiperlinks. O HTML evoluiu ao longo dos anos, tornando-se essencial para o desenvolvimento web moderno.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo do JavaScript">
+      </div>
+      <div class="section margin-top">
+        O JavaScript foi criado em 1995 por Brendan Eich enquanto trabalhava na Netscape. Inicialmente chamado de Mocha, depois LiveScript, tornou-se JavaScript e é hoje a principal linguagem para programação web dinâmica.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Logo do Sass">
+      </div>
+      <div class="section margin-top">
+        O Sass foi criado em 2006 por Hampton Catlin e Natalie Weizenbaum. É um pré-processador CSS que facilita a escrita de estilos com recursos avançados como variáveis e mixins.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Logo do GitHub">
+      </div>
+      <div class="section margin-top">
+        O GitHub foi lançado em 2008 por Tom Preston-Werner, Chris Wanstrath, PJ Hyett e Scott Chacon. Tornou-se a principal plataforma de hospedagem de código-fonte e colaboração usando Git.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Logo do Bootstrap">
+      </div>
+      <div class="section margin-top">
+        O Bootstrap foi criado em 2011 por Mark Otto e Jacob Thornton no Twitter. É um framework front-end que facilita o desenvolvimento de sites responsivos e modernos.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Logo do Tailwind CSS">
+      </div>
+      <div class="section margin-top">
+        O Tailwind CSS foi lançado em 2017 por Adam Wathan. É um framework utilitário para CSS que permite criar interfaces personalizadas de forma rápida e flexível.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Logo do Node.js">
+      </div>
+      <div class="section margin-top">
+        O Node.js foi criado em 2009 por Ryan Dahl. Permite rodar JavaScript no servidor, revolucionando o desenvolvimento de aplicações web escaláveis.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Logo do Next.js">
+      </div>
+      <div class="section margin-top">
+        O Next.js foi lançado em 2016 pela empresa Vercel (antiga ZEIT). É um framework React para aplicações web modernas, com renderização híbrida e foco em performance.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="Logo do TypeScript">
+      </div>
+      <div class="section margin-top">
+        O TypeScript foi criado em 2012 pela Microsoft. É um superset do JavaScript que adiciona tipagem estática, facilitando o desenvolvimento de grandes aplicações.
+      </div>
+      <div class="img-card margin-top">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="Logo do React">
+      </div>
+      <div class="section margin-top">
+        O React foi criado em 2013 pelo engenheiro Jordan Walke, do Facebook. É uma biblioteca JavaScript para construção de interfaces de usuário reativas e componentizadas.
+      </div>
+    </section>
+  </main>
+  <footer style="text-align:center; margin: 40px 0 20px 0; color: #fff; font-size: 14px;">
+    &copy; 2025 - Meu Primeiro Projeto HTML e CSS
+  </footer>
+</body>
+</html>
