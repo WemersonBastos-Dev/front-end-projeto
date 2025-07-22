@@ -53,7 +53,7 @@ Este repositório apresenta um site desenvolvido como exercício prático de fro
 └── 📁 assets
 └── preview.png
 
-🧑‍💻 Autor
+🧑‍💻 Autor:
 
 LinkedIn: www.linkedin.com/in/wemerson-bastos-129451252
 
