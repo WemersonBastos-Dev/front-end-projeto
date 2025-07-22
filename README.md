@@ -7,12 +7,6 @@
 
 ---
 
-## 📸 Preview
-
-![Preview do Projeto](https://raw.githubusercontent.com/WemersonBastos-Dev/front-end-projeto/main/assets/preview.png)
-
-> **Dica:** salve um print do site e coloque em `/assets/preview.png`. Caso prefira, podemos gerar uma imagem juntos.
-
 ---
 
 ## 🧩 Sobre o Projeto
